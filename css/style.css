@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Uni Neue';
-  src: url("../fonts/UniNeueBold.woff2") format("woff2"), url("../fonts/UniNeueBold.woff") format("woff");
+  src: url("../fonts/UniNeueBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Uni Neue';
-  src: url("../fonts/UniNeueRegular.woff2") format("woff2"), url("../fonts/UniNeueRegular.woff") format("woff");
+  src: url("../fonts/UniNeueRegular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Muller';
-  src: url("../fonts/MullerRegular.woff2") format("woff2"), url("../fonts/MullerRegular.woff") format("woff");
+  src: url("../fonts/MullerRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Uni Neue';
-  src: url("../fonts/UniNeueBlack.woff2") format("woff2"), url("../fonts/UniNeueBlack.woff") format("woff");
+  src: url("../fonts/UniNeueBlack.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Uni Neue';
-  src: url("../fonts/UniNeueHeavy.woff2") format("woff2"), url("../fonts/UniNeueHeavy.woff") format("woff");
+  src: url("../fonts/UniNeueHeavy.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -138,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   scroll-behavior: smooth;
 }
-
 
 body.active {
   overflow: hidden;
@@ -166,11 +165,11 @@ body.active {
   background-color: #6BC9BD;
   padding: 33px 0;
   position: fixed;
-  color: white;
+  color:  #fff;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 12;
   transition: .3s;
 }
 
@@ -211,7 +210,6 @@ body.active {
 .header__menu-link {
   margin: 0 20px;
   color: #fff;
-  text-transform: uppercase;
   font-family: 'Muller';
   font-style: normal;
   font-weight: normal;
@@ -335,6 +333,7 @@ body.active {
   font-size: 120px;
   line-height: 159px;
   color: #FFFFFF;
+  text-transform: uppercase;
   text-align: center;
   z-index: 6;
 }
@@ -402,7 +401,7 @@ body.active {
   transform: translateX(-50%);
   bottom: 90px;
   position: absolute;
-  z-index: 96;
+  z-index: 7;
   transition: .5s;
   cursor: pointer;
 }
@@ -448,7 +447,7 @@ body.active {
   font-family: Uni Neue;
   font-style: normal;
   color: #fff;
-  z-index: 1000;
+  z-index: 15;
 }
 .modal__container{
   width: 550px;
@@ -522,7 +521,7 @@ body.active {
   display: inline-block;
   margin-top: 40px;
   position: relative;
-  z-index: 96;
+  z-index: 13;
   left: 50%;
   text-transform: uppercase;
   transform: translateX(-50%);
@@ -771,9 +770,10 @@ details[open] summary {
   margin-top: -55px;
   padding-right: 10px;
   padding-left: 10px;
-  z-index: 96;
+  z-index: 5;
   transition: .5s;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .price__text-link::after {
@@ -1034,7 +1034,7 @@ input[type=radio]:checked+label:before {
   display: inline-block;
   margin-top: 60px;
   position: absolute;
-  z-index: 96;
+  z-index: 5;
   left: 50%;
   text-transform: uppercase;
   transform: translateX(-50%);
@@ -1872,7 +1872,7 @@ details[open] summary:before {
     margin-bottom: 40px;
     text-transform: uppercase;
     position: absolute;
-    z-index:50;
+    z-index:4;
   }
   
   .application__form {
